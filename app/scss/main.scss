@@ -347,36 +347,46 @@ img{
 }
 
 .table {
-	border-right: 1px solid #c6cdd3;
-	border-left: 1px solid #c6cdd3;
-	border-bottom: 1px solid #c6cdd3;
 	border-collapse: collapse;
 	width: 100%;
    margin-bottom: 5px;
-	&__item {
-		border-top: 1px solid #c6cdd3;
-	}
 
-	&__col {
-		border: 1px solid #c6cdd3;
-		text-align: center;
-
-      &--count {
-         &::before {
-            counter-increment: tr;
-            content: counter(tr) ". ";
-         }
+   &__list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin: 0 15px 0 5px;
+      padding: 0;
+      &--header {
+         font-weight: 700;
       }
-	}
+   }
 
-	&__header {
-		border-bottom: 1px solid #c6cdd3;
-      font-weight: 700;
-	}
+   &__col {
+      text-align: center;
+      border-right: 1px solid #c6cdd3;
+      padding: 5px 0;
+      border-bottom: 1px solid #c6cdd3;
+      flex: 1 1 auto;
+      &:first-child {
+         width: 1%;
+         border-left: 1px solid #c6cdd3;
+         padding: 5px 10px 5px 5px;
+      }
+      &:nth-child(2) {
+			width: 20%;
+		}
+		&:nth-child(3) {
+			width: 38%;
+		}
+		&:nth-child(4) {
+			width: 38%;
+		}
+   }
 
 	&__form {
 		display: flex;
-		padding: 0 10px 10px 10px;
+		padding: 0 10px 5px 10px;
 		gap: 10px;
 		align-items: center;
 	}
@@ -408,7 +418,7 @@ img{
 	text-decoration: dashed;
 	cursor: pointer;
 	width: fit-content;
-	margin-top: 20px;
+	margin-top: 5px;
 	transition: .3s;
 	&:hover {
 		color: #c6cdd3;
