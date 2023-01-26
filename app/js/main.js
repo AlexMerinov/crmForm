@@ -53,8 +53,6 @@ editItems.forEach((editItem) => {
       let itemEdit = editItem.closest('.edit-item').querySelector('.edit-item__input');
       let itemResult = editItem.closest('.edit-item').querySelector('.edit-item__value').textContent;
       editItem.closest('.edit-item').classList.add('active');
-   
-      console.log(itemResult);
 
       itemEdit.focus();
       itemEdit.value = "";

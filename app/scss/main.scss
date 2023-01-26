@@ -644,6 +644,14 @@ body.loaded{
       font-size: 16px;
    }
 
+   &__item {
+      &--none {
+         .crmList-taable__col:nth-child(2) {
+            width: 100%;
+         }
+      }
+   }
+
    &__col {
       &:nth-child(1) {
          width: 2%;
