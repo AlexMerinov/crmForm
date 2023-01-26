@@ -797,6 +797,10 @@ img {
   width: 100%;
   margin-bottom: 5px;
 }
+.table * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 .table__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,6 +823,7 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  height: 32px;
 }
 .table__col:first-child {
   width: 1%;
@@ -1166,4 +1171,81 @@ body.loaded .crmForm {
   display: flex;
   border-bottom: 1px solid rgba(198, 205, 211, 0.4941176471);
   font-size: 12px;
+}
+
+.edit-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.edit-item__btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+  height: 100%;
+  width: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.edit-item__btn .icon {
+  width: 10px;
+  height: 12px;
+  fill: #edf1f3;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.edit-item__btn:hover .icon {
+  fill: #2fc6f6;
+}
+.edit-item__value {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.edit-item__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0 30px 0 5px;
+  background-color: #fff;
+  left: 0;
+  z-index: 1;
+}
+
+.edit-item.active .edit-item__value {
+  z-index: 1;
+}
+.edit-item.active .edit-item__input {
+  z-index: 2;
 }

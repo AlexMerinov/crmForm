@@ -177,9 +177,33 @@
                <div class="table" data-table>
                   <ul class="table__list table__list--header">
                      <li class="table__col">№</li>
-                     <li class="table__col">Название</li>
-                     <li class="table__col">Данные</li>
-                     <li class="table__col">Описание</li>
+                     <li class="table__col edit-item">
+                        <span class="edit-item__value">Название</span>
+                        <input type="text" value="" autofocus class="edit-item__input">
+                        <button type="button" class="edit-item__btn" data-edit-btn>
+                           <svg class="icon">
+                              <use xlink:href="images/svg-sprite.svg#pencil"></use>
+                           </svg>
+                        </button>
+                     </li>
+                     <li class="table__col edit-item">
+                        <span class="edit-item__value">Данные</span>
+                        <input type="text" value="" autofocus class="edit-item__input">
+                        <button type="button" class="edit-item__btn" data-edit-btn>
+                           <svg class="icon">
+                              <use xlink:href="images/svg-sprite.svg#pencil"></use>
+                           </svg>
+                        </button>
+                     </li>
+                     <li class="table__col edit-item">
+                        <span class="edit-item__value">Описание</span>
+                        <input type="text" value="" autofocus class="edit-item__input">
+                        <button type="button" class="edit-item__btn" data-edit-btn>
+                           <svg class="icon">
+                              <use xlink:href="images/svg-sprite.svg#pencil"></use>
+                           </svg>
+                        </button>
+                     </li>
                   </ul>
                </div>
 					<input type="button" value="Добавить" class="add-t-item" data-add-item>

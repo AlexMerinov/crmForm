@@ -43,8 +43,28 @@ function createTableItem(){
       let tableForm = event.target.closest('.table__form');
       let parentForm = event.target.closest('.crmForm-item__wrapper');
       parentForm.removeChild(tableForm)
-   } 
+   }
  };
+
+const editItems = document.querySelectorAll('[data-edit-btn]');
+
+editItems.forEach((editItem) => {
+   function editNameField() {
+      let itemEdit = editItem.closest('.edit-item').querySelector('.edit-item__input');
+      let itemResult = editItem.closest('.edit-item').querySelector('.edit-item__value').textContent;
+      editItem.closest('.edit-item').classList.add('active');
+   
+      console.log(itemResult);
+
+      itemEdit.focus();
+      itemEdit.value = "";
+      itemEdit.value = itemResult;
+    }
+
+   editItem.addEventListener('click', function (event) {
+      editNameField();
+   })
+});
 
 roleContainer.onclick = function(event) {
   if (event.target.className == 'crmForm-item__input-remove'){
