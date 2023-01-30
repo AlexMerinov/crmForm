@@ -31,7 +31,7 @@ function createTableItem(){
                            <input type="text" class="table__input">
                            <input type="text" class="table__input">
                            <input type="button" class="table-input-remove" data-remove-item="" value="" title="Удалить строку">`;
-   table.after(newStroke);
+   addStrokeBtn.before(newStroke);
    
  }
  addStrokeBtn.addEventListener('click', function (event) {
