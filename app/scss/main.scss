@@ -639,7 +639,7 @@ body.loaded{
    width: 100%;
 
    &__header {
-      background-color: #c6cdd37e;
+      background-color: #f0f6f6;
       font-weight: 700;
       font-size: 16px;
    }
@@ -666,12 +666,17 @@ body.loaded{
       &:nth-child(4) {
          width: 40%;
       }
+
+      &--no-info {
+         font-size: 18px;
+         text-align: center;
+      }
    }
 
    tr {
       padding: 5px;
       display: flex;
-      border-bottom: 1px solid #c6cdd37e;
+      border-bottom: 1px solid #f0f6f6;
       font-size: 12px;
    }
 }

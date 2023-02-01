@@ -1147,7 +1147,7 @@ body.loaded .crmForm {
   width: 100%;
 }
 .crmList-taable__header {
-  background-color: rgba(198, 205, 211, 0.4941176471);
+  background-color: #f0f6f6;
   font-weight: 700;
   font-size: 16px;
 }
@@ -1167,12 +1167,16 @@ body.loaded .crmForm {
 .crmList-taable__col:nth-child(4) {
   width: 40%;
 }
+.crmList-taable__col--no-info {
+  font-size: 18px;
+  text-align: center;
+}
 .crmList-taable tr {
   padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid rgba(198, 205, 211, 0.4941176471);
+  border-bottom: 1px solid #f0f6f6;
   font-size: 12px;
 }
 
